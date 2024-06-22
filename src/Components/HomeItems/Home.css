@@ -1,0 +1,105 @@
+.All-items {
+  padding: 29px;
+  margin-left: 205px;
+  border: 2px solid rgba(255, 255, 255, 0.029);
+  width: 85.5vw;
+  margin-top: -700px;
+}
+
+.emailItem {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+  font-size: 18px;
+  max-width: 100%;
+}
+
+.emailItem:hover {
+  transform: scale(1.02);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.emailItem input {
+  margin-right: 10px;
+}
+
+.emailItem li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  flex-grow: 1;
+}
+
+.blueDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: blue;
+  margin-right: 8px;
+}
+
+.del {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.del button {
+  width: 90px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: rgba(135, 207, 235, 0.315);
+  color: black;
+}
+
+.del button:hover {
+  background-color: red;
+}
+
+.compose {
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+
+@media (max-width: 768px) {
+  .All-items {
+ 
+    padding: 10px;
+    width: 100%;
+    border: none;
+  }
+
+  .emailItem {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .emailItem li {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .emailItem input {
+    margin-bottom: 10px;
+  }
+
+  .blueDot {
+    margin-bottom: 10px;
+  }
+
+  .del {
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+}
